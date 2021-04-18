@@ -1,7 +1,7 @@
 <h1 class="text-center">豆腐マイコンリアルカート4D+VR
 <br>~DEAD OR ALIVE~</h1>
 
-<img class="rounded mx-auto d-block py-2" src="/img/4DVR/thumnail.jpg" alt="サムネイル" style="max-width: 600px;">
+<img class="rounded mx-auto d-block py-2 w-100" src="/img/4DVR/thumnail.jpg" alt="サムネイル" style="max-width: 600px;">
 
 
 ## 概要

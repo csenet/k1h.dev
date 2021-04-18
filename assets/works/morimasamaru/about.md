@@ -1,6 +1,6 @@
 <h1 class="text-center">森政丸</h1>
 
-<img class="rounded mx-auto d-block py-2" style="max-width: 600px;" src="/img/morimasamaru/thumnail.jpg" alt="サムネイル">
+<img class="rounded mx-auto d-block py-2 w-100" style="max-width: 600px;" src="/img/morimasamaru/thumnail.jpg" alt="サムネイル">
 
 
 ## 概要
