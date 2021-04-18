@@ -1,9 +1,9 @@
 <h1 class="text-center">Santaさん<br>
 </h1>
 
-<img class="rounded mx-auto d-block py-2 w-100" src="/img/santa/thumnail.jpg" alt="サムネイル">
+<img style="max-width: 600px;" class="rounded mx-auto d-block py-2 w-100" src="/img/santa/thumnail.jpg" alt="サムネイル">
 
-<div class="embed-responsive embed-responsive-16by9">
+<div class="embed-responsive embed-responsive-16by9 my-2 mx-auto" style="max-width: 600px;">
   <iframe class="embed-responsive-item" src="/img/santa/demo.mp4" allowfullscreen></iframe>
 </div>
 

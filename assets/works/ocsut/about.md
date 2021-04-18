@@ -2,9 +2,9 @@
 </h1>
 <p class="text-muted text-center">Online Communication Skill Up Tool</p>
 
-<img class="rounded mx-auto d-block py-2 w-100" src="/img/OCSUT/image.jpg" alt="サムネイル">
+<img style="max-width: 600px;" class="rounded mx-auto d-block py-2 w-100 " src="/img/ocsut/image.jpg" alt="サムネイル">
 
-<img class="rounded mx-auto d-block py-2 w-100" src="/img/OCSUT/screen.png" alt="画面">
+<img style="max-width: 600px;" class="rounded mx-auto d-block py-2 w-100" src="/img/ocsut/screen.png" alt="画面">
 
 
 ## 概要

@@ -1,7 +1,7 @@
 <h1 class="text-center">V会議<br>
 </h1>
 
-<img class="rounded mx-auto d-block py-2 w-100" src="/img/vconf/thumnail.jpg" alt="サムネイル">
+<img style="max-width: 600px;" class="rounded mx-auto d-block py-2 w-100" src="/img/vconf/thumnail.jpg" alt="サムネイル">
 
 ## 概要
 

@@ -1,6 +1,6 @@
 <h1 class="text-center">RoboCup Junior</h1>
 
-<img class="rounded mx-auto d-block py-2" src="/img/rcj/thumnail.jpg" alt="サムネイル">
+<img style="max-width: 600px;" class="rounded mx-auto d-block py-2" src="/img/rcj/thumnail.jpg" alt="サムネイル">
 
 
 ## 概要
