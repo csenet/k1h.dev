@@ -7,12 +7,10 @@
       </div>
       <div class="card-deck">
         <div v-for="work in data" :key="work.title">
-          <div class="card my-2" style="width:400px;">
+          <div class="card my-2">
             <img
                 v-lazy="require('~/assets/works/' + work.slag + '/thumnail.jpg')"
                 :alt="work.title"
-                width="400px"
-                height="300px"
             />
             <div class="card-body">
               <h5 class="card-title">{{ work.title }}</h5>
