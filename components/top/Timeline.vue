@@ -1,17 +1,22 @@
 <template>
-  <div class="jumbotron-fluid">
-    <div class="container-fluid">
-      <h3>経歴 - Career</h3>
+  <div class="jumbotron jumbotron-fluid text-dark mt-0 mb-0 pb-5 bg-light">
+    <div class="container">
+      <div class="text-center">
+        <h1>Activity</h1>
+        <p>これまでの活動について</p>
+      </div>
       <ul class="timeline">
-        <li v-for='(item,index) in timeline' v-bind:style="{animationDelay: index*0.3+'s'}">
-          <p class="date">{{ item.isDot ? '' : item.date }}</p>
-          <div v-bind:class="[item.isDot?'content-dot':'','content']">
-            <div class="badge badge-pill badge-secondary date-small">{{ item.date }}</div>
-            <img class="icon" v-bind:src="item.icon">
-            <h4 v-html="item.title"></h4>
-            <span class="eng-title">{{ item.engTitle }}</span>
-            <p v-html="item.description"></p>
-          </div>
+        <li v-for='item in timeline' ref="content">
+          <FadeInComponent>
+            <p class="date">{{ item.date }}</p>
+            <div v-bind:class="[item.isDot?'content-dot':'','content']">
+              <div class="badge badge-pill badge-secondary date-small">{{ item.date }}</div>
+              <img class="icon" alt="icon" v-bind:src="item.icon">
+              <h4 v-html="item.title"></h4>
+              <span class="eng-title">{{ item.engTitle }}</span>
+              <p v-html="item.description"></p>
+            </div>
+          </FadeInComponent>
         </li>
       </ul>
     </div>
@@ -19,35 +24,71 @@
 </template>
 
 <script>
+import FadeInComponent from "@/components/FadeInComponent";
+
 export default {
   name: "timeline",
+  components: {
+    FadeInComponent
+  },
   data() {
     return {
       timeline: [
         {
-          date: "2021年4月",
-          title: "東京工業大学附属<br class=\"d-block d-sm-none\">科学技術高等学校",
-          description: "情報・コンピュータサイエンス分野",
-          engTitle: "Tokyo Tech High School of Science and Technology",
+          date: "2018年4月",
+          title: "東京工業大学附属<br class=\"d-block d-sm-none\">科学技術高等学校入学",
+          engTitle: "情報・コンピュータサイエンス分野",
           icon: require("assets/img/school.svg"),
           isDot: true
         },
         {
-          date: "2021年4月",
-          title: "マイコン制御部 入部",
+          date: "2018年4月",
+          title: "マイコン制御部入部",
           engTitle: "Microcomputer Control Club",
-          description: "マイコン制御部",
           icon: require("assets/img/code.svg"),
-          isDot: true
+        },
+        {
+          date: "2018年12月",
+          title: "RoboCup Junior 関東ブロック大会",
+          engTitle: "Rescue Line 日本リーグ",
+          description: "ベストプレゼンテーション賞受賞",
+          icon: require("assets/img/robot.svg"),
+        },
+        {
+          date: "2019年3月",
+          title: "高校生パフォーマンスロボット競技大会",
+          engTitle: "at 東京都立杉並工業高校",
+          description: "優勝「森政丸」",
+          icon: require("assets/img/robot.svg"),
+        },
+        {
+          date: "2019年12月",
+          title: "TJ-SIF2019",
+          engTitle: "Thai Japan Student Super Science Fair at Thai",
+          description: "OCSUTについての発表",
+          icon: require("assets/img/resarch.svg"),
+        },
+        {
+          date: "2019年12月",
+          title: "TMMF2020",
+          engTitle: "Tukuba Mini Maker Fair",
+          description: "自作4DVRの展示",
+          icon: require("assets/img/making.svg"),
+        },
+        {
+          date: "2020年9月",
+          title: "SSH生徒研究発表会",
+          engTitle: "Thai Japan Student Super Science Fair at Thai",
+          description: "生徒投票賞受賞<br>3Dアバターを使ったWeb会議システムの開発",
+          icon: require("assets/img/resarch.svg"),
         },
         {
           date: "2021年4月",
-          title: "電気通信大学 入学",
-          engTitle: "University of Electro-Communications",
-          description: "情報理工学域 I類<br>コンピュータサイエンスプログラム",
+          title: "電気通信大学入学",
+          engTitle: "I類コンピュータサイエンスプログラム",
           icon: require("assets/img/school.svg"),
           isDot: true
-        }
+        },
       ]
     }
   }
@@ -68,17 +109,15 @@ $DOT: $dark;
   padding-left: 10px;
 
   li {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-    animation-delay: 1s;
     overflow: hidden;
     position: relative;
   }
 
   .date {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     width: 110px;
     float: left;
+    display: none;
   }
 
   .date-small {
@@ -89,15 +128,14 @@ $DOT: $dark;
   }
 
   .icon {
-    padding: 0;
+    padding: 3px 3px 3px;
     width: 40px;
     height: 40px;
     border-radius: 5px 5px 5px 5px;
-    background: white;
   }
 
   h4 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .eng-title {
@@ -114,7 +152,7 @@ $DOT: $dark;
     width: 90%;
     float: left;
     border-left: 3px $LINE solid;
-    margin-left:4px;
+    margin-left: 4px;
     padding-left: 30px;
   }
 
@@ -125,17 +163,8 @@ $DOT: $dark;
     background: $DOT;
     position: absolute;
     top: 50px;
-    left: 0px;
+    left: 0;
     border-radius: 100%;
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0
-    }
-    100% {
-      opacity: 1
-    }
   }
 }
 
@@ -143,7 +172,7 @@ $DOT: $dark;
 @media (min-width: 640px) {
   .timeline {
     li {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
 
     .date {
@@ -153,7 +182,7 @@ $DOT: $dark;
 
     .content {
       width: 75%;
-      margin-left:0px;
+      margin-left: 0;
     }
 
     .date-small {

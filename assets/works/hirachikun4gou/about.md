@@ -1,3 +1,0 @@
-# Santaさん
-
-Hello EveryOne

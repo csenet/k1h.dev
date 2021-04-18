@@ -1,38 +1,60 @@
 <template>
-  <div class="jumbotron jumbotron-fluid bg-white text-dark pt-3 mb-0 pb-5">
-    <div class="container">
-      <h1>Works</h1>
-      <p>今まで作成したものや携わった作品です</p>
+  <b-jumbotron fluid class="mb-0 py-5" text-variant="dark" bg-variant="light">
+    <b-container>
+      <div class="text-center">
+        <h1>Works</h1>
+        <p>今まで作成したものや携わった作品です<br>今後，もっと追加予定</p>
+      </div>
       <div class="card-deck">
         <div v-for="work in data" :key="work.title">
-          <div
-            class="card mb-2 text-center"
-            style="max-width: 20rem; word-break: keep-all"
-          >
+          <div class="card my-2" style="width:400px;">
             <img
-              v-lazy="require('~/assets/works/' + work.slag + '/thumnail.jpg')"
-              :alt="work.title"
-              width="100%"
+                v-lazy="require('~/assets/works/' + work.slag + '/thumnail.jpg')"
+                :alt="work.title"
+                width="400px"
+                height="300px"
             />
             <div class="card-body">
               <h5 class="card-title">{{ work.title }}</h5>
               <p class="card-text">
                 {{ work.outline }}
               </p>
-              <button href="#" class="btn btn-outline-dark">Read More</button>
+              <button @click="show(work.title)" class="btn btn-outline-dark">Read More</button>
+              <modal :name="work.title" width="90%" height="auto" :scrollable="true" class="py-2">
+                <b-container class="pt-5">
+                  <div v-html="require('~/assets/works/' + work.slag + '/about.md').default" class="py-1"></div>
+                  <b-button @click="hide(work.title)" variant="outline-dark" class="my-2">Close</b-button>
+                </b-container>
+              </modal>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </b-container>
+  </b-jumbotron>
 </template>
 <script>
-import { mapGetters } from "vuex";
+import {mapGetters} from "vuex";
 
 export default {
   computed: {
-    ...mapGetters({ data: "works/getAll" }),
+    ...mapGetters({data: "works/getAll"}),
   },
+  methods: {
+    show(name) {
+      this.$modal.show(name);
+    },
+    hide(name) {
+      this.$modal.hide(name);
+    },
+    getRendered(path) {
+      return $md.render(JSON.stringify(require(path).default));
+    }
+  }
 };
 </script>
+<style scoped>
+h1 {
+  text-align: center !important;
+}
+</style>

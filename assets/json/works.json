@@ -1,21 +1,21 @@
 [
     {
-        "title": "平地君4号",
+        "title": "RoboCup Junior",
         "subTitle": "Rocup Junior Rescue\nJapan League",
-        "slag": "hirachikun4gou",
-        "outline": "ライントレースに特化した機体で 交差点判定に強いです"
+        "slag": "rcj",
+        "outline": "交差点判定対応ライントレーサ"
     },
     {
         "title": "森政丸",
         "subTitle": "Paformance Robot Contest",
         "slag": "morimasamaru",
-        "outline": "侍の型のロボットで 腰の剣を振る動きをします"
+        "outline": "侍型ロボット"
     },
     {
         "title": "OCSUT",
         "subTitle": "Thai Japan Student Super Science Fare",
         "slag": "ocsut",
-        "outline": "機械学習させたSNSの投稿をもとに 炎上しない投稿ためのアプリです"
+        "outline": "炎上しない投稿ためのアプリ"
     },
     {
         "title": "T.M.R.C 4D+VR",
@@ -33,6 +33,6 @@
         "title": "V会議",
         "subTitle": "Themed Resarch",
         "slag": "vconf",
-        "outline": "Web上でVRアバターに扮して 簡単に会議が出来るサービスです"
+        "outline": "Web上でVRアバターに扮して簡単に 会議が出来るサービスです"
     }
 ]

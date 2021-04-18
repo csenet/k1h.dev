@@ -1,0 +1,61 @@
+<template>
+  <div class="jumbotron jumbotron-fluid mb-0">
+    <div class="container">
+      <h4 class="display-5">$ whoami</h4>
+      <ul>
+        <li>name : VOID</li>
+        <li>jobs : engineer, student</li>
+        <li>school : University of Electro-Communications</li>
+      </ul>
+      <h4>$ interests</h4>
+      <ul>
+        <li>Electronics</li>
+        <li>Network System</li>
+        <li>Edge Computing</li>
+        <li>Security</li>
+      </ul>
+
+      <h4>$ qualifications</h4>
+      <ul>
+        <li>実用英語技能検定 2級 (2018.4)</li>
+        <li>基本情報技術者 (2019.11)</li>
+      </ul>
+
+      <h4>$ awarded</h4>
+      <ul>
+        <li>パフォーマンスロボット競技大会<br>準優勝 (2018)</li>
+        <li>
+          RCJ Rescue Line NL 関東ブロック大会 (2018)
+          <br/>ベストプレゼンテーション賞
+        </li>
+        <li>
+          HackU 2020 Online Vol.1 (2020)
+          <br/>Happy Hacking賞
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Aboutme.vue"
+}
+</script>
+
+<style lang="scss" scoped>
+@import "assets/css/morokai";
+
+.jumbotron-fluid {
+  background-color: $bg;
+  color: $text;
+}
+
+pre {
+  color: $text;
+}
+
+ul {
+  list-style: '-> ';
+}
+</style>
