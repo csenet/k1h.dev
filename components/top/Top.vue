@@ -1,6 +1,6 @@
 <template>
   <div class="jumbotron jumbotron-fluid text-dark mb-0">
-    <div class="container text-center">
+    <div class="container text-center py-5">
       <b-img-lazy
           class="avatar"
           src="~/assets/img/icon.png"

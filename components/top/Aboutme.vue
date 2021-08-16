@@ -1,7 +1,7 @@
 <template>
   <div class="jumbotron jumbotron-fluid mb-0">
-    <div class="container">
-      <h4 class="display-5">$ whoami</h4>
+    <b-container class="py-5">
+      <h4>$ whoami</h4>
       <ul>
         <li>name : VOID</li>
         <li>jobs : engineer, student</li>
@@ -33,7 +33,7 @@
           <br/>Happy Hacking賞
         </li>
       </ul>
-    </div>
+    </b-container>
   </div>
 </template>
 

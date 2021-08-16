@@ -1,12 +1,12 @@
 <template>
   <div class="jumbotron jumbotron-fluid text-dark mt-0 mb-0 pb-5 bg-light">
-    <div class="container">
+    <b-container class="py-5">
       <div class="text-center">
-        <h1>Activity</h1>
+        <h1 class="display-5">Activity</h1>
         <p>これまでの活動について</p>
       </div>
       <ul class="timeline">
-        <li v-for='item in timeline' ref="content">
+        <li v-for='(item,index) in timeline' ref="content" v-bind:key='index'>
           <FadeInComponent>
             <p class="date">{{ item.date }}</p>
             <div v-bind:class="[item.isDot?'content-dot':'','content']">
@@ -19,7 +19,7 @@
           </FadeInComponent>
         </li>
       </ul>
-    </div>
+    </b-container>
   </div>
 </template>
 
