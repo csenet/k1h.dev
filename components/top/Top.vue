@@ -16,7 +16,7 @@
       <a href="https://twitter.com/kou3141592">
         <i class="fab fa-twitter"></i>
       </a>
-      <a href="https://github.com/kouichihirachi">
+      <a href="https://github.com/csenet">
         <i class="fab fa-github"></i>
       </a>
       <!--      <p>-->
