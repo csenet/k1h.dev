@@ -1,6 +1,6 @@
 # Portfolio
 
-This is Koichi Hirachi's Portflio Site.
+This is K1h's Portflio Site.
 # Used Technologies
 ## Front-end
 - HTML5
@@ -10,3 +10,7 @@ This is Koichi Hirachi's Portflio Site.
 - Nuxt.js (https://ja.nuxtjs.org)
 ## Back-end
 - GitHub Pages
+## CI
+- Travis CI
+## Inturastructure
+- Cloud Flare
