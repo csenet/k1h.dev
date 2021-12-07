@@ -25,7 +25,7 @@ export default {
             {
                 hid: 'description',
                 name: 'description',
-                content: process.env.npm_package_description || 'Koichi Hirachi\'s Portfolio'
+                content: process.env.npm_package_description || 'K1h\'s Portfolio'
             },
             {hid: 'og-site-name', property: 'og:site_name', content: 'Kouichi Hirachi'},
         ],
@@ -102,7 +102,7 @@ export default {
     },
     sitemap: {
         path: '/sitemap.xml',
-        hostname: 'http://kouichihirachi.github.io/',
+        hostname: 'http://k1h.works',
         cacheTime: 1000 * 60 * 15,
         gzip: true
     }
