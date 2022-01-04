@@ -61,7 +61,9 @@ export default {
     /*
      ** Nuxt.js dev-modules
      */
-    buildModules: [],
+    buildModules: [
+        '@aceforth/nuxt-optimized-images'
+    ],
     /*
      ** Nuxt.js modules
      */
@@ -105,5 +107,8 @@ export default {
         hostname: 'http://k1h.works',
         cacheTime: 1000 * 60 * 15,
         gzip: true
+    },
+    optimizedImages: {
+        optimizeImages: true
     }
 }

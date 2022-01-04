@@ -23,7 +23,8 @@
           >
             <b-carousel-slide
                 v-for="work in data" :key="work.title"
-                :img-src="require('~/assets/works/' + work.slag + '/thumnail.jpg')"
+                :img-src="require('~/assets/works/' + work.slag + '/thumnail.jpg?webp')"
+                type="image/webp"
             >
               <div class="image-overlay"></div>
             </b-carousel-slide>

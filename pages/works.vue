@@ -9,8 +9,9 @@
         <div v-for="work in data" :key="work.title">
           <div class="card my-2">
             <img
-                v-lazy="require('~/assets/works/' + work.slag + '/thumnail.jpg')"
+                v-lazy="require('~/assets/works/' + work.slag + '/thumnail.jpg?webp')"
                 :alt="work.title"
+                type="image/webp"
             />
             <div class="card-body">
               <h5 class="card-title">{{ work.title }}</h5>
