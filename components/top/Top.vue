@@ -3,10 +3,11 @@
     <div class="container text-center py-5">
       <b-img-lazy
           class="avatar"
-          src="~/assets/img/icon.png"
+          :src='require("~/assets/img/icon.png?webp")'
           alt="My Photo"
           rounded="circle"
           width="200"
+          height="200"
       >
       </b-img-lazy>
       <h1 class="display-5 pt-3">VOID</h1>
