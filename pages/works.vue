@@ -5,8 +5,8 @@
         <h1>Works</h1>
         <p>今まで作成したものや携わった作品です<br>今後，もっと追加予定</p>
       </div>
-      <div class="card-deck">
-        <div v-for="work in data" :key="work.title">
+      <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4">
+        <div v-for="work in data" :key="work.title" class="col">
           <div class="card my-2">
             <img
                 v-lazy="require('~/assets/works/' + work.slag + '/thumnail.jpg?webp')"
