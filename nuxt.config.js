@@ -3,12 +3,12 @@ export default {
      ** Nuxt rendering mode
      ** See https://nuxtjs.org/api/configuration-mode
      */
-    ssr: false,
+    ssr: true,
     /*
      ** Nuxt target
      ** See https://nuxtjs.org/api/configuration-target
      */
-    target: 'static',
+    target: 'server',
     /*
      ** Headers of the page
      ** See https://nuxtjs.org/api/configuration-head
@@ -50,8 +50,8 @@ export default {
         src: '~/plugins/vue-lazyload.js',
         ssr: false
     },
-        {src: '~/plugins/gtag.js'},
-        { src: '~/plugins/main.js'}
+        {src: '~/plugins/gtag.js', mode: 'client'},
+        {src: '~/plugins/main.js', mode: 'client'}
     ],
     /*
      ** Auto import components
