@@ -14,7 +14,7 @@
       <p>
         Student, Engineer
       </p>
-      <a href="https://twitter.com/kou3141592">
+      <a href="https://twitter.com/k1h_tech">
         <i class="fab fa-twitter"></i>
       </a>
       <a href="https://github.com/csenet">
