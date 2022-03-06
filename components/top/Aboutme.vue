@@ -26,19 +26,16 @@
       <ul>
         <li>パフォーマンスロボット競技大会<br>準優勝 (2018)</li>
         <li>
-          RCJ Rescue Line NL 関東ブロック大会 (2018)
-          <br/>ベストプレゼンテーション賞
+          RCJ Rescue Line NL 関東ブロック大会 ベストプレゼンテーション賞 (2018)
         </li>
         <li>
-          HackU 2020 Online Vol.1 (2020)
-          <br/>Happy Hacking賞
+          HackU 2020 Online Vol.1 Happy Hacking賞 (2020)
         </li>
         <li>
-          SecHack365 優秀修了(2022)
+          Discovery Hackathon 最優秀賞 (2021)
         </li>
         <li>
-          Discovery Hackathon (2021)
-          <br/>最優秀賞
+          SecHack365 優秀修了 (2022)
         </li>
       </ul>
     </b-container>
