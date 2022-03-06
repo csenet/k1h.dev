@@ -32,6 +32,8 @@
           HackU 2020 Online Vol.1 Happy Hacking賞 (2020)
         </li>
         <li>
+          SSH生徒研究発表会 生徒投票賞 (2020)
+        <li>
           Discovery Hackathon 最優秀賞 (2021)
         </li>
         <li>
