@@ -18,6 +18,7 @@
       <h4>$ qualifications</h4>
       <ul>
         <li>実用英語技能検定 2級 (2018.4)</li>
+        <li>実用英語技能検定 準1級 (2021.3)</li>
         <li>基本情報技術者 (2019.11)</li>
       </ul>
 
@@ -31,6 +32,13 @@
         <li>
           HackU 2020 Online Vol.1 (2020)
           <br/>Happy Hacking賞
+        </li>
+        <li>
+          SecHack365 優秀修了(2022)
+        </li>
+        <li>
+          Discovery Hackathon (2021)
+          <br/>最優秀賞
         </li>
       </ul>
     </b-container>
