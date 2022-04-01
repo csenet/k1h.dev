@@ -32,6 +32,7 @@
 				<li>SSH生徒研究発表会 生徒投票賞 (2020)</li>
 				<li>Discovery Hackathon 最優秀賞 (2021)</li>
 				<li>SecHack365 優秀修了 (2022)</li>
+				<li>UEC BugBountry Contest 優秀賞(2022)</li>
 			</ul>
 		</b-container>
 	</div>
