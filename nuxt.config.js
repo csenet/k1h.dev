@@ -3,12 +3,12 @@ export default {
      ** Nuxt rendering mode
      ** See https://nuxtjs.org/api/configuration-mode
      */
-    ssr: true,
+    ssr: false,
     /*
      ** Nuxt target
      ** See https://nuxtjs.org/api/configuration-target
      */
-    target: 'server',
+    target: 'static',
     /*
      ** Headers of the page
      ** See https://nuxtjs.org/api/configuration-head
@@ -16,8 +16,8 @@ export default {
     head: {
         title: process.env.npm_package_name || '',
         meta: [{
-            charset: 'utf-8'
-        },
+                charset: 'utf-8'
+            },
             {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1'
@@ -27,13 +27,17 @@ export default {
                 name: 'description',
                 content: process.env.npm_package_description || 'K1h\'s Portfolio'
             },
-            {hid: 'og-site-name', property: 'og:site_name', content: 'Kouichi Hirachi'},
+            {
+                hid: 'og-site-name',
+                property: 'og:site_name',
+                content: 'Kouichi Hirachi'
+            },
         ],
         link: [{
             rel: 'icon',
             type: 'image/x-icon',
             href: '/favicon.ico'
-        },],
+        }, ],
         script: [{
             src: 'https://kit.fontawesome.com/b486939b4d.js'
         }]
@@ -47,11 +51,17 @@ export default {
      ** https://nuxtjs.org/guide/plugins
      */
     plugins: [{
-        src: '~/plugins/vue-lazyload.js',
-        ssr: false
-    },
-        {src: '~/plugins/gtag.js', mode: 'client'},
-        {src: '~/plugins/main.js', mode: 'client'}
+            src: '~/plugins/vue-lazyload.js',
+            ssr: false
+        },
+        {
+            src: '~/plugins/gtag.js',
+            mode: 'client'
+        },
+        {
+            src: '~/plugins/main.js',
+            mode: 'client'
+        }
     ],
     /*
      ** Auto import components

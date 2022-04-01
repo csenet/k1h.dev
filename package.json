@@ -24,11 +24,9 @@
     "install": "^0.13.0",
     "jquery": "1.9.1",
     "jshint": "^2.13.2",
-    "node-sass": "^6.0.1",
     "npm": "^8.3.0",
     "nuxt": "^2.15.8",
     "nuxt-webfontloader": "^1.1.0",
-    "sass-loader": "^10.2.0",
     "scrollreveal": "^4.0.9",
     "vue": "^2.5.18",
     "vue-gtag": "^1.16.1",
@@ -41,10 +39,12 @@
     "@aceforth/nuxt-optimized-images": "^1.4.0",
     "imagemin-mozjpeg": "^7.0.0",
     "imagemin-pngquant": "^9.0.2",
+    "node-sass": "6",
+    "sass-loader": "10",
     "webp-loader": "^0.6.0"
   },
   "engines": {
-    "node": "14.x",
+    "node": "16.x",
     "npm": "7.14.0"
   }
 }
