@@ -78,7 +78,7 @@ export default {
         {
           date: "2020年9月",
           title: "SSH生徒研究発表会",
-          engTitle: "Thai Japan Student Super Science Fair at Thai",
+          engTitle: "Super Science High School Students Fair 2020",
           description: "生徒投票賞受賞<br>3Dアバターを使ったWeb会議システムの開発",
           icon: require("assets/img/resarch.svg"),
         },
