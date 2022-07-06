@@ -13,6 +13,7 @@
               <div class="badge badge-pill badge-secondary date-small">{{ item.date }}</div>
               <img class="icon" alt="icon" v-bind:src="item.icon">
               <h4 v-html="item.title"></h4>
+              <span><a class="link" v-bind:href="item.link">{{item.link}}</a></span>
               <span class="eng-title">{{ item.engTitle }}</span>
               <p v-html="item.description"></p>
             </div>
@@ -89,6 +90,46 @@ export default {
           icon: require("assets/img/school.svg"),
           isDot: true
         },
+        {
+          date: "2021年6月",
+          title: "SecHack365",
+          description: "Seknotの開発",
+          link: "https://sechack365.nict.go.jp/",
+          icon: require("assets/img/making.svg"),
+          isDot: false
+        },
+        {
+          date: "2021年9月",
+          title: "Discovery Hackathon2021",
+          description: "最優秀賞受賞<br>オンラインスイカ割り<br>ご注文は豆腐職人ですか？",
+          link: "https://special.discoveryjapan.jp/campaign/hackathon2021/report1.html",
+          icon: require("assets/img/making.svg"),
+          isDot: false
+        },
+        {
+          date: "2021年9月",
+          title: "Digital HackDay 2021",
+          description: "A.I. Post<br>ご注文は豆腐職人ですか？",
+          link: "https://hackday.yahoo.co.jp",
+          icon: require("assets/img/making.svg"),
+          isDot: false
+        },
+        {
+          date: "2021年9月",
+          title: "技育展2021",
+          description: "V会議",
+          icon: require("assets/img/making.svg"),
+          link: "https://talent.supporterz.jp/geekten/2021/",
+          isDot: false
+        },
+        {
+          date: "2022年3月",
+          title: "UEC Bug Bounty Contest 2021",
+          description: "優秀賞受賞",
+          icon: require("assets/img/resarch.svg"),
+          link: "https://bb.csirt.uec.ac.jp/",
+          isDot: false
+        },
       ]
     }
   }
@@ -139,6 +180,13 @@ $DOT: $dark;
   }
 
   .eng-title {
+    color: gray;
+    font-family: "JetBrains Mono";
+    font-size: 0.8rem;
+  }
+
+  .link{
+    text-decoration: none;
     color: gray;
     font-family: "JetBrains Mono";
     font-size: 0.8rem;
