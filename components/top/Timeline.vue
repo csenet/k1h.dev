@@ -6,14 +6,18 @@
         <p>これまでの活動について</p>
       </div>
       <ul class="timeline">
-        <li v-for='(item,index) in timeline' ref="content" v-bind:key='index'>
+        <li v-for="(item, index) in timeline" ref="content" v-bind:key="index">
           <FadeInComponent>
             <p class="date">{{ item.date }}</p>
-            <div v-bind:class="[item.isDot?'content-dot':'','content']">
-              <div class="badge badge-pill badge-secondary date-small">{{ item.date }}</div>
-              <img class="icon" alt="icon" v-bind:src="item.icon">
+            <div v-bind:class="[item.isDot ? 'content-dot' : '', 'content']">
+              <div class="badge badge-pill badge-secondary date-small">
+                {{ item.date }}
+              </div>
+              <img class="icon" alt="icon" v-bind:src="item.icon" />
               <h4 v-html="item.title"></h4>
-              <span><a class="link" v-bind:href="item.link">{{item.link}}</a></span>
+              <span
+                ><a class="link" v-bind:href="item.link">{{ item.link }}</a></span
+              >
               <span class="eng-title">{{ item.engTitle }}</span>
               <p v-html="item.description"></p>
             </div>
@@ -30,17 +34,17 @@ import FadeInComponent from "@/components/FadeInComponent";
 export default {
   name: "timeline",
   components: {
-    FadeInComponent
+    FadeInComponent,
   },
   data() {
     return {
       timeline: [
         {
           date: "2018年4月",
-          title: "東京工業大学附属<br class=\"d-block d-sm-none\">科学技術高等学校入学",
+          title: '東京工業大学附属<br class="d-block d-sm-none">科学技術高等学校入学',
           engTitle: "情報・コンピュータサイエンス分野",
           icon: require("assets/img/school.svg"),
-          isDot: true
+          isDot: true,
         },
         {
           date: "2018年4月",
@@ -88,7 +92,7 @@ export default {
           title: "電気通信大学入学",
           engTitle: "I類コンピュータサイエンスプログラム",
           icon: require("assets/img/school.svg"),
-          isDot: true
+          isDot: true,
         },
         {
           date: "2021年6月",
@@ -96,7 +100,7 @@ export default {
           description: "Seknotの開発",
           link: "https://sechack365.nict.go.jp/",
           icon: require("assets/img/making.svg"),
-          isDot: false
+          isDot: false,
         },
         {
           date: "2021年9月",
@@ -104,7 +108,7 @@ export default {
           description: "最優秀賞受賞<br>オンラインスイカ割り<br>ご注文は豆腐職人ですか？",
           link: "https://special.discoveryjapan.jp/campaign/hackathon2021/report1.html",
           icon: require("assets/img/making.svg"),
-          isDot: false
+          isDot: false,
         },
         {
           date: "2021年9月",
@@ -112,7 +116,7 @@ export default {
           description: "A.I. Post<br>ご注文は豆腐職人ですか？",
           link: "https://hackday.yahoo.co.jp",
           icon: require("assets/img/making.svg"),
-          isDot: false
+          isDot: false,
         },
         {
           date: "2021年9月",
@@ -120,7 +124,7 @@ export default {
           description: "V会議",
           icon: require("assets/img/making.svg"),
           link: "https://talent.supporterz.jp/geekten/2021/",
-          isDot: false
+          isDot: false,
         },
         {
           date: "2022年3月",
@@ -128,7 +132,7 @@ export default {
           description: "優秀賞受賞",
           icon: require("assets/img/resarch.svg"),
           link: "https://bb.csirt.uec.ac.jp/",
-          isDot: false
+          isDot: false,
         },
         {
           date: "2022年10月",
@@ -136,12 +140,36 @@ export default {
           description: "学生スタッフ",
           icon: require("assets/img/resarch.svg"),
           link: "https://codeblue.jp/2022/",
-          isDot: false
+          isDot: false,
         },
-      ]
-    }
-  }
-}
+        {
+          date: "2022年10月",
+          title: "2022年 SPRESENSE™ 活用コンテスト",
+          description: `<a href="https://elchika.com/article/eda17074-24e7-49a9-8a44-d38c37cca581/">Eltresを使ったCO2濃度監視システム</a><br><a href="Spresenseでプラレール衝突防止システム">Spresenseでプラレール衝突防止システム</a>`,
+          icon: require("assets/img/making.svg"),
+          link: "https://elchika.com/promotion/spresense2022/",
+          isDot: false,
+        },
+        {
+          date: "2022年10月",
+          title: "Sensing Solution アイデアソン・ハッカソン2022",
+          description: "Spresenseを用いた列車運行支援システム",
+          icon: require("assets/img/making.svg"),
+          link: "https://sensing-solution-hackathon.sonyged.com/hc/ja",
+          isDot: false,
+        },
+        {
+          date: "2022年10月",
+          title: "JPHACKS 2022",
+          description: "Qusahaiel<br>ご注文は豆腐職人ですか？",
+          icon: require("assets/img/making.svg"),
+          link: "https://github.com/IOATofu/Qusahaiel",
+          isDot: false,
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -193,7 +221,7 @@ $DOT: $dark;
     font-size: 0.8rem;
   }
 
-  .link{
+  .link {
     text-decoration: none;
     color: gray;
     font-family: "JetBrains Mono";
@@ -213,7 +241,7 @@ $DOT: $dark;
   }
 
   .content-dot:before {
-    content: '';
+    content: "";
     width: 12px;
     height: 12px;
     background: $DOT;
