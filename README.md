@@ -11,6 +11,6 @@ This is K1h's Portflio Site.
 ## Back-end
 - GitHub Pages
 ## CI
-- Travis CI
+- Github Action
 ## Inturastructure
 - Cloud Flare
