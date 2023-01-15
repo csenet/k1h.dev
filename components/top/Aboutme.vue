@@ -20,6 +20,7 @@
 				<li>実用英語技能検定 2級 (2018.4)</li>
 				<li>実用英語技能検定 準1級 (2021.3)</li>
 				<li>基本情報技術者 (2019.11)</li>
+				<li>応用情報技術者 (2023.11)</li>
 			</ul>
 
 			<h4>$ awarded</h4>
@@ -33,6 +34,7 @@
 				<li>Discovery Hackathon 最優秀賞 (2021)</li>
 				<li>SecHack365 優秀修了 (2022)</li>
 				<li>UEC BugBountry Contest 優秀賞(2022)</li>
+				<li>技育展2022 インフラ・セキュリティ部門 優秀賞(2022)</li>
 			</ul>
 		</b-container>
 	</div>
