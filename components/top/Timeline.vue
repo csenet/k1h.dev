@@ -166,6 +166,14 @@ export default {
           link: "https://eltres-iot.jp/ideacon2022/",
           isDot: false,
         },
+        {
+          date: "2022年5月~2023年3月",
+          title: "SecHack365",
+          description: "アシスタント",
+          icon: require("assets/img/resarch.svg"),
+          link: "https://sechack365.nict.go.jp/trainers/index.html",
+          isDot: false,
+        },
       ],
     };
   },
