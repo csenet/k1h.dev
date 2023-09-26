@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Top/>
+    <Top />
     <Aboutme />
-    <Timeline/>
+    <Timeline />
     <Slideshow />
   </div>
 </template>
@@ -12,7 +12,7 @@ import Timeline from "~/components/top/Timeline.vue";
 import Aboutme from "~/components/top/Aboutme.vue";
 import Top from "~/components/top/Top.vue";
 import Slideshow from "~/components/top/Slideshow.vue";
-import {mapGetters} from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   components: {
@@ -20,15 +20,15 @@ export default {
     Timeline,
     Aboutme,
     Top,
-    Slideshow
+    Slideshow,
   },
   computed: {
-    ...mapGetters({data: "works/getAll"}),
+    ...mapGetters({ data: "works/getAll" }),
   },
   data() {
     return {
       self: require("~/assets/img/icon.png"),
-      isGachaAvailable: false, // Turn on off ガチャ機能
+      isGachaAvailable: true, // Turn on off ガチャ機能
     };
   },
 };
